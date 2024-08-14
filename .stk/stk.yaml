@@ -7,6 +7,7 @@ metadata:
   stack: stack-plug-infra-sns@1.0.0
 spec:
   type: infra
+  infra-id: 01J592VJHJVHQB3D6SV6FGX8F2
   plugins:
     - name: studio-jcgs/stack-plug-infra-sns@1.0.0/plug-infra-generates-sns@0.0.2
       alias: plug-infra-generates-sns-1723660584592
