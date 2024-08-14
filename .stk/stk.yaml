@@ -1,0 +1,62 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: teste
+  description: teste
+  stack-version-id: 01HG18BB3J3FD7T448W2NS864Y
+  stack: stack-plug-infra-sns@1.0.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-plug-infra-sns@1.0.0/plug-infra-generates-sns@0.0.2
+      alias: plug-infra-generates-sns-1723660584592
+      plugin-version-id: 01HG9893S8WVPTMGETXAWS447N
+      stack-version-id: 01HG18BB3J3FD7T448W2NS864Y
+      type: infra
+      inputs:
+        topic1_name: teste
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: testefsd
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-plug-infra-sns@1.0.0/plug-infra-generates-sns@0.0.2
+      alias: plug-infra-generates-sns-1723660599042
+      plugin-version-id: 01HG9893S8WVPTMGETXAWS447N
+      stack-version-id: 01HG18BB3J3FD7T448W2NS864Y
+      type: infra
+      inputs:
+        topic1_name: tsfa
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: teste2
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-plug-infra-sns@1.0.0/plug-infra-requires-sns@0.0.1
+      alias: plug-infra-requires-sns-1723660584603
+      plugin-version-id: 01HG189EHXMQKDKRBK6SMYKNX0
+      stack-version-id: 01HG18BB3J3FD7T448W2NS864Y
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-sns-conn
+            selected: teste2
+            alias: sns-require-alias-1
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
