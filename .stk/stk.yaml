@@ -1,0 +1,42 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-refactor-network1
+  description: infra-refactor-network1
+  stack-version-id: 01J5NB9B0CXC6JAPS5M6R8RWQP
+  stack: qatests-stack-base@37.0.0
+spec:
+  type: infra
+  infra-id: 01J5XTFFWDH7D0PA7VKDDAPP20
+  plugins:
+    - name: 
+        qatests-studio-base/qatests-stack-base@37.0.0/plugin-infra-app-allowed-false@0.0.1
+      alias: plugin-infra-app-allowed-false-1724356429364
+      plugin-version-id: 01HVS189JP9WZTT89AE3MTPXKY
+      stack-version-id: 01J5NB9B0CXC6JAPS5M6R8RWQP
+      type: infra
+      inputs:
+        resource: Client
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: 
+        qatests-studio-base/qatests-stack-base@37.0.0/plugin-infra-app-allowed-true@0.0.1
+      alias: plugin-infra-app-allowed-true-1724356429379
+      plugin-version-id: 01HVS18TNH6JVPRE708KF5MYJJ
+      stack-version-id: 01J5NB9B0CXC6JAPS5M6R8RWQP
+      type: infra
+      inputs:
+        resource: Client
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
