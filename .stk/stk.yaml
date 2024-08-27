@@ -7,6 +7,7 @@ metadata:
   stack: teste-infraestrutura-aws-kms@0.0.1
 spec:
   type: infra
+  infra-id: 01J6A6VVAXVW3VPE565ZXWT4VV
   plugins:
     - name: front/teste-infraestrutura-aws-kms@0.0.1/front-infraestrutura-aws-kms@0.0.1
       alias: front-infraestrutura-aws-kms-1724772071874
