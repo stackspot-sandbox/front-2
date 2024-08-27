@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-teste-10
+  description: app-teste-1
+  starter: qatests-studio-base/qatests-stack-base@22.0.0/qatests-starter-base
+  stack-version-id: 01HVVWEZQ13CV3Y9NBM9PRGFDV
+  stack: qatests-stack-base@22.0.0
+spec:
+  type: app
+  app-id: 01J6A6R6WY7GMMEMKY6GK9EEW7
+  plugins:
+    - name: qatests-studio-base/qatests-stack-base@22.0.0/plugin-app-dummy-01@0.0.1
+      alias: plugin-app-dummy-01-1724771991316
+      plugin-version-id: 01HER273JJWYBH5HBTT9D71ZHK
+      stack-version-id: 01HVVWEZQ13CV3Y9NBM9PRGFDV
+      type: app
+      inputs:
+        input1: '{{ TESTE }}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
