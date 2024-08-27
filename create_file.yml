@@ -1,0 +1,62 @@
+kind: shared-infrastructure
+metadata:
+  description: infra-teste-1
+  name: infra-teste-10
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: front-infraestrutura-aws-kms-1724772071874
+    connections:
+      generates:
+      - alias: aws-kms-key
+        selected: my-aws-kms-conn
+        type: aws-kms-key
+      requires: []
+    inputs:
+      alias: teste
+      aws_services:
+      - ec2
+      description: teste
+      enable_aws_services: true
+      kms_advanced_options: false
+      name: teste
+      owner_team_email: teste.sdafa@mailer.com.br
+      tech_team_email: teste.sdafa@mailer.com.br
+    inputs-envs:
+      enable_aws_iam_roles:
+        amb-spa-test: false
+        amb-test-global: false
+        ambiente-teste-123: false
+        ambiente-teste-novo-layout: false
+        asdasd: false
+        cloud-services: false
+        development: false
+        novo: false
+        production: false
+        quality-assurance: false
+        staging: false
+        stg-test-env: false
+        technical-writer: false
+        teste-ambiente-novo-layout2: false
+        teste11: false
+        tiagoteste: false
+      enable_tags:
+        amb-spa-test: false
+        amb-test-global: false
+        ambiente-teste-123: false
+        ambiente-teste-novo-layout: false
+        asdasd: false
+        cloud-services: false
+        development: false
+        novo: false
+        production: false
+        quality-assurance: false
+        staging: false
+        stg-test-env: false
+        technical-writer: false
+        teste-ambiente-novo-layout2: false
+        teste11: false
+        tiagoteste: false
+    name: front/teste-infraestrutura-aws-kms@0.0.1/front-infraestrutura-aws-kms
+  repository: https://github.com/stackspot-sandbox/front-2
+  stack-qualifier: front/teste-infraestrutura-aws-kms@0.0.1
