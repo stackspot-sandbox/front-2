@@ -1,0 +1,72 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-teste-10
+  description: infra-teste-1
+  stack-version-id: 01J5ZQ7R1Z30SM1RH4VD5NK9S5
+  stack: teste-infraestrutura-aws-kms@0.0.1
+spec:
+  type: infra
+  infra-id: 01J6A6VVAXVW3VPE565ZXWT4VV
+  plugins:
+    - name: front/teste-infraestrutura-aws-kms@0.0.1/front-infraestrutura-aws-kms@0.0.1
+      alias: front-infraestrutura-aws-kms-1724772071874
+      plugin-version-id: 01J5ZQ6697MXE1CHG6D4TM2DZY
+      stack-version-id: 01J5ZQ7R1Z30SM1RH4VD5NK9S5
+      type: infra
+      inputs:
+        name: teste
+        description: teste
+        owner_team_email: teste.sdafa@mailer.com.br
+        tech_team_email: teste.sdafa@mailer.com.br
+        alias: teste
+        enable_aws_services: true
+        aws_services:
+          - ec2
+        kms_advanced_options: false
+      inputs-envs:
+        enable_aws_iam_roles:
+          amb-spa-test: false
+          amb-test-global: false
+          ambiente-teste-123: false
+          ambiente-teste-novo-layout: false
+          asdasd: false
+          cloud-services: false
+          development: false
+          novo: false
+          production: false
+          quality-assurance: false
+          staging: false
+          stg-test-env: false
+          technical-writer: false
+          teste-ambiente-novo-layout2: false
+          teste11: false
+          tiagoteste: false
+        enable_tags:
+          amb-spa-test: false
+          amb-test-global: false
+          ambiente-teste-123: false
+          ambiente-teste-novo-layout: false
+          asdasd: false
+          cloud-services: false
+          development: false
+          novo: false
+          production: false
+          quality-assurance: false
+          staging: false
+          stg-test-env: false
+          technical-writer: false
+          teste-ambiente-novo-layout2: false
+          teste11: false
+          tiagoteste: false
+      connections:
+        generates:
+          - type: aws-kms-key
+            selected: my-aws-kms-conn
+            alias: aws-kms-key
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
