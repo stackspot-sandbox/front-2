@@ -1,0 +1,50 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-teste-04-09-1
+  description: app-teste-04-09-1
+  starter: front/front@7.0.1/app-starter-asd
+  stack-version-id: 01J67KHT8DGN3PDBDVZXS9QJD3
+  stack: front@7.0.1
+spec:
+  type: app
+  plugins:
+    - name: front/front@7.0.1/plugin-conditional@1.0.0
+      alias: plugin-conditional-1725452491502
+      plugin-version-id: 01HQBJEAMMXN8HEVAHB8XWZZNV
+      stack-version-id: 01J67KHT8DGN3PDBDVZXS9QJD3
+      type: app
+      inputs:
+        language: Java
+        java_version: '11'
+        customer_snippet: true
+        table_name: Test
+        user_age: 6
+        team: sdfasdf
+        field_4: item1
+        contains_any_operator_test_1: dfasd
+        contains_any_operator_test_2: fasdfas
+        field_number: 1
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: front/front@7.0.1/plugin-chamuska@0.1.0
+      alias: plugin-chamuska-1725452491509
+      plugin-version-id: 01HGTKK2MP2DFGA6A403TEJCQA
+      stack-version-id: 01J67KHT8DGN3PDBDVZXS9QJD3
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
