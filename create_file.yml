@@ -1,0 +1,24 @@
+kind: application
+metadata:
+  description: app-teste-04-09
+  name: app-teste-04-09
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-app-dummy-01-1725452397226
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input1: '{{ TESTE }}'
+    inputs-envs: {}
+    name: qatests-studio-base/qatests-stack-base@22.0.0/plugin-app-dummy-01
+  - alias: plugin-app-dummy-05-1725452403082
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input1: value1
+    inputs-envs: {}
+    name: qatests-studio-base/qatests-stack-base@22.0.0/plugin-app-dummy-05
+  repository: https://github.com/stackspot-sandbox/front-2
