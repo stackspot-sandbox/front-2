@@ -1,0 +1,36 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: sdfasdfasdfa
+  description: sdfasdfasdfa
+  starter: teste-iam-stg-2/teste-default@0.0.6/teste-default
+  stack-version-id: 01HRWGHNAXNKEZRZBKFC81ZJAG
+  stack: teste-default@0.0.6
+spec:
+  type: app
+  plugins:
+    - name: teste-iam-stg-2/teste-default@0.0.6/plugin-select-default-value@0.0.5
+      alias: plugin-select-default-value-1726173023622
+      plugin-version-id: 01HQBM5YZANKXWH1VHBGZ9TJ3A
+      stack-version-id: 01HRWGHNAXNKEZRZBKFC81ZJAG
+      type: app
+      inputs:
+        group_id: Valor 2
+        "language": java
+        arch: Hexagonal
+        java_version: '11'
+        builder: gradle
+        dynamic_config: localenv
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs:
+    group_id: Valor 2
+    arch: Hexagonal
+    builder: gradle
+    dynamic_config: localenv
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
