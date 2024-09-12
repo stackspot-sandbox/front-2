@@ -8,6 +8,7 @@ metadata:
   stack: teste-default@0.0.6
 spec:
   type: app
+  app-id: 01J7KZ4E6JNQEDKED7PM7A5FTS
   plugins:
     - name: teste-iam-stg-2/teste-default@0.0.6/plugin-select-default-value@0.0.5
       alias: plugin-select-default-value-1726173023622
