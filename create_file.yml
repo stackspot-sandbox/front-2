@@ -1,0 +1,24 @@
+kind: application
+metadata:
+  description: refactor-app-1
+  name: refactor-app-1
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-app-input-list-general-tests-simple-1726513464530
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input_list_2:
+      - testing
+      objeto_com_todos_inputs_basicos:
+        boolean_field: true
+        boolean_field2: true
+        integer_field: 1
+        integer_field2: 34
+        text_field: test
+      required-sns-alias: sns-conn-teste
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@2.0.4/plugin-app-input-list-general-tests-simple
+  repository: https://github.com/stackspot-sandbox/front-2

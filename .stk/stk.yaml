@@ -1,0 +1,39 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: refactor-app-1
+  description: refactor-app-1
+  starter: 
+    studio-jcgs/stack-test-v3@2.0.4/starter-plugin-app-input-list-general-tests-simple
+  stack-version-id: 01J4CXK65JDXET8T9EG1KTSM7Q
+  stack: stack-test-v3@2.0.4
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@2.0.4/plugin-app-input-list-general-tests-simple@1.0.0
+      alias: plugin-app-input-list-general-tests-simple-1726513464530
+      plugin-version-id: 01J4A8X6H81027AG2G3F2Y6DR5
+      stack-version-id: 01J4CXK65JDXET8T9EG1KTSM7Q
+      type: app
+      inputs:
+        required-sns-alias:
+          stk-type: required-connection
+          selected: sns-conn-teste
+          type: aws-sns-conn
+        objeto_com_todos_inputs_basicos:
+          text_field: test
+          boolean_field: true
+          boolean_field2: true
+          integer_field: 1
+          integer_field2: 34
+        input_list_2:
+          - testing
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
