@@ -1,0 +1,18 @@
+kind: shared-infrastructure
+metadata:
+  description: infra-link-1
+  name: infra-link-1
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-infra-with-link-1726669958415
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: front/front-with-link@0.0.1/plugin-infra-with-link
+  repository: https://github.com/stackspot-sandbox/front-2
+  stack-qualifier: front/front-with-link@0.0.1
