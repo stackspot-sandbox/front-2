@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-link-1
+  description: infra-link-1
+  stack-version-id: 01J82RNKEYV6JK8JWS4VYQVDSS
+  stack: front-with-link@0.0.1
+spec:
+  type: infra
+  infra-id: 01J82RSJBZ2CK6QKPG8H5VHJ9Q
+  plugins:
+    - name: front/front-with-link@0.0.1/plugin-infra-with-link@0.0.1
+      alias: plugin-infra-with-link-1726669958415
+      plugin-version-id: 01J82RK9AYH9BJ8HEFN62AD3PQ
+      stack-version-id: 01J82RNKEYV6JK8JWS4VYQVDSS
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
