@@ -1,0 +1,42 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: sdfasdfasdafsd
+  description: sdfasdfasdafsd
+  stack-version-id: 01J92NQ29SDR1PCPZZGBKQDK3T
+  stack: stack-perfomance@1.1.0
+spec:
+  type: infra
+  plugins:
+    - name: front/stack-perfomance@1.1.0/infraestrutura-gitops-performance@2.0.0
+      alias: infraestrutura-gitops-performance-1727786069403
+      plugin-version-id: 01J92NMQS2PKBKR2AMJ45C18BV
+      stack-version-id: 01J92NQ29SDR1PCPZZGBKQDK3T
+      type: infra
+      inputs:
+        general_inputs:
+          project: default
+          app_port:
+            - 1
+          ingress_url:
+            - '2'
+          iam_role_use: false
+        metrics_inputs:
+          enable_prometheus: false
+        env_inputs:
+          selected_env:
+            - desenvolvimento
+          dev_inputs:
+            select_additional_options:
+              - default
+            labels: []
+            app_variables: []
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2

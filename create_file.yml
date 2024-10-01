@@ -1,0 +1,31 @@
+kind: shared-infrastructure
+metadata:
+  description: sdfasdfasdafsd
+  name: sdfasdfasdafsd
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: infraestrutura-gitops-performance-1727786069403
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      env_inputs:
+        dev_inputs:
+          select_additional_options:
+          - default
+        selected_env:
+        - desenvolvimento
+      general_inputs:
+        app_port:
+        - '1'
+        iam_role_use: false
+        ingress_url:
+        - '2'
+        project: default
+      metrics_inputs:
+        enable_prometheus: false
+    inputs-envs: {}
+    name: front/stack-perfomance@1.1.0/infraestrutura-gitops-performance
+  repository: https://github.com/stackspot-sandbox/front-2
+  stack-qualifier: front/stack-perfomance@1.1.0
