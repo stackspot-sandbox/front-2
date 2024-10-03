@@ -1,0 +1,30 @@
+kind: application
+metadata:
+  description: teste-s3-4
+  name: front-2
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: generate-s3-1727960746433
+    connections:
+      generates:
+      - alias: my-s3-conn
+        selected: my-s3-conn-teste
+        type: aws-s3-conn
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: front/s3-test@0.0.1/generate-s3
+  - alias: plugin-requires-s3-1727960746441
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      front-edp-aws-s3-conn: my-s3-conn-teste
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: front/s3-test@0.0.1/plugin-requires-s3
+  repository: https://github.com/stackspot-sandbox/front-2.git

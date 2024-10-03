@@ -1,0 +1,49 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: front-2
+  description: teste-s3-4
+  starter: front/s3-test@0.0.1/app-s3-starter
+  stack-version-id: 01J996RTNN69GYSMPHTFNBS4MF
+  stack: s3-test@0.0.1
+spec:
+  type: app
+  plugins:
+    - name: front/s3-test@0.0.1/generate-s3@0.0.1
+      alias: generate-s3-1727960746433
+      plugin-version-id: 01HR9T11DEW76TJ008TE6TD4HC
+      stack-version-id: 01J996RTNN69GYSMPHTFNBS4MF
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-s3-conn
+            selected: my-s3-conn-teste
+            alias: my-s3-conn
+        requires: []
+      links:
+        generates: []
+    - name: front/s3-test@0.0.1/plugin-requires-s3@0.0.1
+      alias: plugin-requires-s3-1727960746441
+      plugin-version-id: 01J996QKACQZ10B45DYVB31EQ0
+      stack-version-id: 01J996RTNN69GYSMPHTFNBS4MF
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+        front-edp-aws-s3-conn:
+          stk-type: required-connection
+          selected: my-s3-conn-teste
+          type: aws-s3-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2.git
