@@ -8,6 +8,7 @@ metadata:
   stack: s3-test@0.0.1
 spec:
   type: app
+  app-id: 01J997SF3Q8RAQF0GCB4QC534Q
   plugins:
     - name: front/s3-test@0.0.1/generate-s3@0.0.1
       alias: generate-s3-1727960746433
