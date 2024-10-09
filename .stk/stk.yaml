@@ -1,0 +1,34 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-sns
+  description: infra-sns
+  stack-version-id: 01J6CJM9Q6C890T64B9DW90W3Y
+  stack: qatests-stack-base@39.0.0
+spec:
+  type: infra
+  plugins:
+    - name: 
+        qatests-studio-base/qatests-stack-base@39.0.0/plugin-infra-requires-two-sns@0.0.1
+      alias: plugin-infra-requires-two-sns-1728480227301
+      plugin-version-id: 01HER3XB6WGTCB4XQ9W5QW3B35
+      stack-version-id: 01J6CJM9Q6C890T64B9DW90W3Y
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-sns-conn
+            selected: sns-env
+            alias: sns-require-alias-1
+          - type: aws-sns-conn
+            selected: sns-conn-teste
+            alias: sns-require-alias2
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
