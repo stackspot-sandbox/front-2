@@ -7,6 +7,7 @@ metadata:
   stack: qatests-stack-base@39.0.0
 spec:
   type: infra
+  infra-id: 01J9RQ6QEE8Q3MBA0SX2AF2BAV
   plugins:
     - name: 
         qatests-studio-base/qatests-stack-base@39.0.0/plugin-infra-requires-two-sns@0.0.1
