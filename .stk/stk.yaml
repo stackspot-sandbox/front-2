@@ -1,0 +1,44 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-sns
+  description: infra-sns
+  stack-version-id: 01J6CJM9Q6C890T64B9DW90W3Y
+  stack: qatests-stack-base@39.0.0
+spec:
+  type: infra
+  plugins:
+    - name: qatests-studio-base/qatests-stack-base@39.0.0/plugin-infra-sns-and-links@0.0.4
+      alias: plugin-infra-sns-and-links-1728481545566
+      plugin-version-id: 01HHCKBEJA4V5XDDGCCTXFMH0J
+      stack-version-id: 01J6CJM9Q6C890T64B9DW90W3Y
+      type: infra
+      inputs:
+        topic1_name: teste
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: aws-sns-conn-infra-sns
+            alias: alias-generate-one-sns
+        requires:
+          - type: aws-sns-conn
+            selected: conn-aws-sns
+            alias: alias-requires-one-sns
+      links:
+        generates:
+          - name: Google Static Search
+            url: "https://www.google.com/search?q=Stackspot"
+            type: static
+            picture: imgs/google_png.png
+          - name: Google Dynamic Search (using Plugin Input data)
+            url: https://www.google.com/search?q=teste
+            type: dynamic
+            picture: imgs/google_png.png
+          - name: Google Dynamic Search (using Deployment data)
+            url: https://www.google.com/search?q={{stk_env}}+{{connections.conn-aws-sns.arn}}
+            type: dynamic
+            picture: imgs/google_png.png
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
