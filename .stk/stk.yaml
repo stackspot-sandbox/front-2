@@ -8,6 +8,7 @@ metadata:
   stack: qatests-stack-base@49.0.0
 spec:
   type: app
+  app-id: 01JBVSYEDP0J35V5E2E0PF8MAF
   plugins:
     - name: 
         qatests-studio-base/qatests-stack-base@49.0.0/plugin-infra-input-properties-required-and-default-tests@7.0.0
