@@ -1,0 +1,141 @@
+kind: application
+metadata:
+  description: adfasdfasdf
+  name: adfasdfasdf
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-app-dummy-01-1730723931392
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input1: value1
+    inputs-envs: {}
+    name: qatests-studio-base/qatests-stack-base@49.0.0/plugin-app-dummy-01
+  - alias: plugin-infra-input-properties-required-and-default-tests-1730723945419
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input_object:
+        object-generated-connection-input-required-no-default-value: safafdsa
+        object_boolean_input_not_required_and_default_value: true
+        object_boolean_input_not_required_no_default_value: true
+        object_boolean_input_required_and_default_value: true
+        object_boolean_input_required_no_default_value: true
+        object_input_properties_title: 1000
+        object_integer_input_not_required_and_default_value: 10
+        object_integer_input_required_and_default_value: 10
+        object_integer_input_required_no_default_value: 340
+        object_list_of_int_input_required_no_default_value:
+        - '43343'
+        object_list_of_object_input_required_no_default_value:
+        - object_list_object_input_child_1_1: 4234
+          object_list_object_input_child_1_2: 2433
+        object_list_of_text_input_required_no_default_value:
+        - sdfasdf
+        object_multiselect_input_not_required_and_default_value:
+        - item1
+        - item4
+        object_multiselect_input_required_and_default_value:
+        - item1
+        - item4
+        object_multiselect_input_required_no_default_value:
+        - item1
+        object_object_input_required_no_default_value:
+          object_object_input_child_1_1: 34240
+          object_object_input_child_1_2: 3434
+        object_password_input_required_no_default_value: MDFKQlZLSzlIRDA0OE1LNVFTVkRFMkQxWER8WUEwL0tvMlJmcnRFQmNjQUJ1MEp0NnFOSFZjMlcxN0lrbS9yOHZkOUVoQXJvUT09
+        object_required_connection_input_required_no_default_value: aaaaa
+        object_select_input_not_required_and_default_value: java
+        object_select_input_required_and_default_value: java
+        object_select_input_required_no_default_value: python
+        object_text_input_not_required_and_default_value: default-value
+        object_text_input_not_required_no_default_value: ''
+        object_text_input_required_and_default_value: default-value
+        object_text_input_required_no_default_value: safad
+      list_object_input:
+      - list-object-generated-connection-input-required-no-default-value: dsfasda
+        list_object_boolean_input_not_required_and_default_value: true
+        list_object_boolean_input_not_required_no_default_value: true
+        list_object_boolean_input_required_and_default_value: true
+        list_object_boolean_input_required_no_default_value: true
+        list_object_input_properties_title: 1000
+        list_object_integer_input_not_required_and_default_value: 10
+        list_object_integer_input_required_and_default_value: 10
+        list_object_integer_input_required_no_default_value: 434
+        list_object_list_of_int_input_required_no_default_value:
+        - '3434'
+        list_object_list_of_object_input_required_no_default_value:
+        - list_object_list_object_input_child_1_1: 4324
+          list_object_list_object_input_child_1_2: 3424
+        list_object_multiselect_input_not_required_and_default_value:
+        - item1
+        - item4
+        list_object_multiselect_input_required_and_default_value:
+        - item1
+        - item4
+        list_object_multiselect_input_required_no_default_value:
+        - item1
+        list_object_object_input_required_no_default_value:
+          list_object_object_input_child_1_1: 433
+          list_object_object_input_child_1_2: 4323
+        list_object_password_input_required_no_default_value: MDFKQlZLSzlXOTIwMU42V1pBR1hHOFoxTkd8SnhmTWdPMmNrb2Z0dEtGbG5rSzVMWjNtMXpXTTU4bFBXVVRnZjdaTWsvND0=
+        list_object_required_connection_input_required_no_default_value: aaaaa
+        list_object_select_input_not_required_and_default_value: java
+        list_object_select_input_required_and_default_value: java
+        list_object_select_input_required_no_default_value: python
+        list_object_text_input_not_required_and_default_value: default-value
+        list_object_text_input_not_required_no_default_value: ''
+        list_object_text_input_required_and_default_value: default-value
+        list_object_text_input_required_no_default_value: asdfa
+        object_list_of_text_input_required_no_default_value:
+        - asdfasdfa
+      root-generated-connection-input-required-no-default-value: asdfasd
+      root_boolean_input_not_required_and_default_value: true
+      root_boolean_input_not_required_no_default_value: true
+      root_boolean_input_required_and_default_value: true
+      root_boolean_input_required_no_default_value: true
+      root_condition_input: true
+      root_input_properties_title: 1000
+      root_integer_input_not_required_and_default_value: 10
+      root_integer_input_required_and_default_value: 10
+      root_integer_input_required_no_default_value: 234
+      root_list_of_int_input_required_no_default_value:
+      - '343'
+      root_list_of_object_input_required_no_default_value:
+      - list_object_input_child_1_1: 3434
+        list_object_input_child_1_2: 3432
+      root_list_of_text_input_required_no_default_value:
+      - asdfasdfa
+      root_multiselect_input_not_required_and_default_value:
+      - item1
+      - item4
+      root_multiselect_input_required_and_default_value:
+      - item1
+      - item4
+      root_multiselect_input_required_no_default_value:
+      - item1
+      root_object_input_required_no_default_value:
+        root_object_input_child_1_1: 43
+        root_object_input_child_1_2: 118
+      root_password_input_required_no_default_value: MDFKQlZLSzlBNFNKVldIMFFUMUM5OTJCQTh8Z3hPNDZUd1dSK0wyMVpDS2k4SU15b3BKNTlJeGozSXJNckFmVzRqYVNGdXdDdz09
+      root_required_connection_input_required_no_default_value: aaaaa
+      root_select_input_not_required_and_default_value: java
+      root_select_input_required_and_default_value: java
+      root_select_input_required_no_default_value: python
+      root_text_input_not_required_and_default_value: default-value
+      root_text_input_required_and_default_value: default-value
+      root_text_input_required_no_default_value: asdfasdfa
+    inputs-envs: {}
+    name: qatests-studio-base/qatests-stack-base@49.0.0/plugin-infra-input-properties-required-and-default-tests
+  - alias: plugin-app-from-studio-a-1730724573879
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      input1: value1
+    inputs-envs: {}
+    name: qatests-studio-base/qatests-stack-base@49.0.0/plugin-app-from-studio-a
+  repository: https://github.com/stackspot-sandbox/front-2
