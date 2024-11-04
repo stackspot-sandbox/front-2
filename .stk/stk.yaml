@@ -1,0 +1,178 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: fdasdfasdfasdfasdfa
+  description: fdasdfasdfasdfasdfa
+  starter: qatests-studio-base/qatests-stack-base@49.0.0/qatests-starter-base
+  stack-version-id: 01JBEQD7S2QPZ0N4VRNYBXNE5Y
+  stack: qatests-stack-base@49.0.0
+spec:
+  type: app
+  plugins:
+    - name: 
+        qatests-studio-base/qatests-stack-base@49.0.0/plugin-infra-input-properties-required-and-default-tests@7.0.0
+      alias: plugin-infra-input-properties-required-and-default-tests-1730730843148
+      plugin-version-id: 01JBEQ68F1WR1NPG4X571QF1NX
+      stack-version-id: 01JBEQD7S2QPZ0N4VRNYBXNE5Y
+      type: infra
+      inputs:
+        root_condition_input: true
+        root_input_properties_title: 1000
+        root_text_input_required_no_default_value: asdfasdfa
+        root_boolean_input_required_no_default_value: true
+        root_integer_input_required_no_default_value: 42337
+        root_password_input_required_no_default_value: '***'
+        root_select_input_required_no_default_value: python
+        root_multiselect_input_required_no_default_value:
+          - item1
+        root_required_connection_input_required_no_default_value:
+          stk-type: required-connection
+          selected: aaaaa
+          type: aws-sns-conn
+        root-generated-connection-input-required-no-default-value:
+          stk-type: generated-connection
+          selected: adsfasda
+          type: aws-sns-conn
+        root_object_input_required_no_default_value:
+          root_object_input_child_1_1: 32430
+          root_object_input_child_1_2: 23428
+        root_list_of_text_input_required_no_default_value:
+          - aaa
+        root_list_of_int_input_required_no_default_value:
+          - 111
+        root_list_of_object_input_required_no_default_value:
+          - list_object_input_child_1_1: 23
+            list_object_input_child_1_2: 231
+        root_boolean_input_not_required_no_default_value: true
+        root_text_input_required_and_default_value: default-value
+        root_boolean_input_required_and_default_value: true
+        root_integer_input_required_and_default_value: 10
+        root_select_input_required_and_default_value: java
+        root_multiselect_input_required_and_default_value:
+          - item1
+          - item4
+        root_text_input_not_required_and_default_value: default-value
+        root_boolean_input_not_required_and_default_value: true
+        root_integer_input_not_required_and_default_value: 10
+        root_select_input_not_required_and_default_value: java
+        root_multiselect_input_not_required_and_default_value:
+          - item1
+          - item4
+        input_object:
+          object_input_properties_title: 1000
+          object_text_input_required_no_default_value: sdfasd
+          object_boolean_input_required_no_default_value: true
+          object_integer_input_required_no_default_value: 2434
+          object_password_input_required_no_default_value: '***'
+          object_select_input_required_no_default_value: python
+          object_multiselect_input_required_no_default_value:
+            - item1
+          object_required_connection_input_required_no_default_value:
+            stk-type: required-connection
+            selected: aaaaa
+            type: aws-sns-conn
+          object-generated-connection-input-required-no-default-value:
+            stk-type: generated-connection
+            selected: asdfasda
+            type: aws-sns-conn
+          object_object_input_required_no_default_value:
+            object_object_input_child_1_1: 43432
+            object_object_input_child_1_2: 218
+          object_list_of_text_input_required_no_default_value:
+            - aaa
+          object_list_of_int_input_required_no_default_value:
+            - 222
+          object_list_of_object_input_required_no_default_value:
+            - object_list_object_input_child_1_1: 3434
+              object_list_object_input_child_1_2: 3431
+          object_text_input_not_required_no_default_value: ''
+          object_boolean_input_not_required_no_default_value: true
+          object_text_input_required_and_default_value: default-value
+          object_boolean_input_required_and_default_value: true
+          object_integer_input_required_and_default_value: 10
+          object_select_input_required_and_default_value: java
+          object_multiselect_input_required_and_default_value:
+            - item1
+            - item4
+          object_text_input_not_required_and_default_value: default-value
+          object_boolean_input_not_required_and_default_value: true
+          object_integer_input_not_required_and_default_value: 10
+          object_select_input_not_required_and_default_value: java
+          object_multiselect_input_not_required_and_default_value:
+            - item1
+            - item4
+        list_object_input:
+          - list-object-generated-connection-input-required-no-default-value:
+              stk-type: generated-connection
+              selected: asda
+              type: aws-sns-conn
+            list_object_boolean_input_not_required_and_default_value: true
+            list_object_boolean_input_not_required_no_default_value: true
+            list_object_boolean_input_required_and_default_value: true
+            list_object_boolean_input_required_no_default_value: true
+            list_object_input_properties_title: 997
+            list_object_integer_input_not_required_and_default_value: 10
+            list_object_integer_input_required_and_default_value: 10
+            list_object_integer_input_required_no_default_value: 3429
+            list_object_list_of_int_input_required_no_default_value:
+              - 343
+            list_object_list_of_object_input_required_no_default_value:
+              - list_object_list_object_input_child_1_1: 343
+                list_object_list_object_input_child_1_2: 4236
+            list_object_multiselect_input_not_required_and_default_value:
+              - item1
+              - item4
+            list_object_multiselect_input_required_and_default_value:
+              - item1
+              - item4
+            list_object_multiselect_input_required_no_default_value:
+              - item1
+            list_object_object_input_required_no_default_value:
+              list_object_object_input_child_1_1: 3423
+              list_object_object_input_child_1_2: 340
+            list_object_password_input_required_no_default_value: '***'
+            list_object_required_connection_input_required_no_default_value:
+              stk-type: required-connection
+              selected: aaaaa
+              type: aws-sns-conn
+              connection:
+                arn: arn:aws:sns:sa-east-1:300543077521:topicdefault
+                topic_name: arn:aws:sns:sa-east-1:300543077521:topicdefault
+            list_object_select_input_not_required_and_default_value: java
+            list_object_select_input_required_and_default_value: java
+            list_object_select_input_required_no_default_value: python
+            list_object_text_input_not_required_and_default_value: default-value
+            list_object_text_input_not_required_no_default_value: ''
+            list_object_text_input_required_and_default_value: default-value
+            list_object_text_input_required_no_default_value: faasdfa
+            object_list_of_text_input_required_no_default_value:
+              - aaa
+            list-object-required-connection-input-required-no-default-value:
+              stk-type: required-connection
+              selected: aaaaa
+              type: aws-sns-conn
+              connection:
+                arn: arn:aws:sns:sa-east-1:300543077521:topicdefault
+                topic_name: arn:aws:sns:sa-east-1:300543077521:topicdefault
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: qatests-studio-base/qatests-stack-base@49.0.0/plugin-app-dummy-01@0.0.1
+      alias: plugin-app-dummy-01-1730730831469
+      plugin-version-id: 01HER273JJWYBH5HBTT9D71ZHK
+      stack-version-id: 01JBEQD7S2QPZ0N4VRNYBXNE5Y
+      type: app
+      inputs:
+        input1: value1
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
