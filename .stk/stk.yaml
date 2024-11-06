@@ -1,0 +1,47 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: asdfasdfa
+  description: fasdfasdaf
+  stack-version-id: 01HYXX3KDAFE5X9GPRDPE6WCPN
+  stack: stack-with-inputs-envs@1.0.1
+spec:
+  type: infra
+  infra-id: 01JC1DD44NSWDHN6AXZTD3YWDG
+  plugins:
+    - name: 
+        cli-francisco-studio/stack-with-inputs-envs@1.0.1/plugin-infra-with-inputs-envs@1.0.0
+      alias: plugin-infra-with-inputs-envs-1730919347007
+      plugin-version-id: 01HYXWXKES2F99MY5QDKX1S475
+      stack-version-id: 01HYXX3KDAFE5X9GPRDPE6WCPN
+      type: infra
+      inputs: {}
+      inputs-envs:
+        resource:
+          a11y: Front
+          accessibility-test: Front
+          amb-spa-test: Front
+          amb-test-global: Front
+          ambiente-teste-123: Front
+          ambiente-teste-novo-layout: Front
+          asdasd: Front
+          cloud-services: Front
+          development: Front
+          novo: Front
+          production: Front
+          quality-assurance: Front
+          staging: Front
+          stg-test-env: Front
+          technical-writer: Front
+          teste: Front
+          teste-ambiente-novo-layout2: Front
+          teste11: Front
+          tiagoteste: Front
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
