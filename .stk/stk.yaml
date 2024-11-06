@@ -7,6 +7,7 @@ metadata:
   stack: stack-with-inputs-envs@1.0.1
 spec:
   type: infra
+  infra-id: 01JC1DBN8BJ26JH5EKJGE12QNR
   plugins:
     - name: 
         cli-francisco-studio/stack-with-inputs-envs@1.0.1/plugin-infra-with-inputs-envs@1.0.0
