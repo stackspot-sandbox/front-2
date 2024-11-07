@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: sdfasdfasdfasdfa
+  description: asdfasda
+  stack-version-id: 01JC3H84BQQD9BPV8K0AXWT4NW
+  stack: front@7.0.8
+spec:
+  type: infra
+  infra-id: 01JC3HFQCNJETM7Q92P2RTP1J9
+  plugins:
+    - name: front/front@7.0.8/teste-remove-default@0.0.1
+      alias: teste-remove-default-1730990806527
+      plugin-version-id: 01JC3H60SDVKW3644GB3RE4Y92
+      stack-version-id: 01JC3H84BQQD9BPV8K0AXWT4NW
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
