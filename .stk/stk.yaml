@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-workflow
+  description: app-workflow
+  starter: qatests-studio-base/qatests-stack-base@40.0.0/qatests-starter-base
+  stack-version-id: 01J9Y5YWC9NXM8MM83F3Y3CF8S
+  stack: qatests-stack-base@40.0.0
+spec:
+  type: app
+  app-id: 01JC455T5F9GGD659A80MJFMD3
+  plugins:
+    - name: qatests-studio-base/qatests-stack-base@40.0.0/plugin-app-dummy-01@0.0.1
+      alias: plugin-app-dummy-01-1731011459333
+      plugin-version-id: 01HER273JJWYBH5HBTT9D71ZHK
+      stack-version-id: 01J9Y5YWC9NXM8MM83F3Y3CF8S
+      type: app
+      inputs:
+        input1: value1
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
