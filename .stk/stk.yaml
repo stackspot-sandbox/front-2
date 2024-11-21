@@ -7,6 +7,7 @@ metadata:
   stack: front@7.1.0
 spec:
   type: infra
+  infra-id: 01JD79CFAXXJY2BSXE8YDF7QA2
   plugins:
     - name: front/front@7.1.0/plugin-text-area@0.0.1
       alias: plugin-text-area-1732190265149
