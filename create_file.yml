@@ -1,0 +1,19 @@
+schema-version: v1
+kind: shared-infrastructure
+metadata:
+  name: infra-text-area
+  description: ' infra-text-area'
+spec:
+  repository: https://github.com/stackspot-sandbox/front-2
+  stack-qualifier: front/front@7.1.0
+  applied-plugins:
+  - name: front/front@7.1.0/plugin-text-area
+    alias: plugin-text-area-1732190265149
+    inputs:
+      resource: Client
+      textarea-resource: new value
+      method: GET
+    inputs-envs: {}
+    connections:
+      requires: []
+      generates: []
