@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-text-area
+  description: ' infra-text-area'
+  stack-version-id: 01JCZTQ3419X3QT15WMRBH9EPZ
+  stack: front@7.1.0
+spec:
+  type: infra
+  infra-id: 01JD79CFAXXJY2BSXE8YDF7QA2
+  plugins:
+    - name: front/front@7.1.0/plugin-text-area@0.0.1
+      alias: plugin-text-area-1732190265149
+      plugin-version-id: 01JCEFX2F2VH1ZVYKCKBMSGF2Q
+      stack-version-id: 01JCZTQ3419X3QT15WMRBH9EPZ
+      type: infra
+      inputs:
+        resource: Client
+        textarea-resource: new value
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/front-2
